@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <parent>
-      <artifactId>main</artifactId>
-      <groupId>com.alibaba.cola</groupId>
-      <version>2.0.0</version>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.alibaba.cola</groupId>
-  <artifactId>cola-framework-archetype-service</artifactId>
+  <artifactId>main</artifactId>
   <version>2.0.0</version>
   <packaging>maven-archetype</packaging>
 
   <name>cola framework archetype</name>
+  <modules>
+    <module>all</module>
+    <module>statemachine</module>
+    <module>cola-framework-archetype-web</module>
+    <module>cola-framework-archetype-service</module>
+  </modules>
 
   <build>
     <extensions>
@@ -31,13 +32,4 @@
       </plugins>
     </pluginManagement>
   </build>
-
-  <!-- already in parent
-    <distributionManagement>
-      <snapshotRepository>
-        <id>snapshots</id>
-        <url>http://repo.alibaba-inc.com/mvn/snapshots</url>
-      </snapshotRepository>
-    </distributionManagement>
-   -->
 </project>
